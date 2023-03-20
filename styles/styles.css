@@ -19,7 +19,7 @@ body {
 .header {
   margin: 10px;
   background: rgba(0, 0, 0, 0.7);
-  height: 360px;
+  height: 100%;
   border: 2px solid #09a603;
   border-radius: 20px;
   display: flex;
@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 360px;
+  /* height: 100%; */
   text-align: center;
   justify-content: space-around;
 }
@@ -121,7 +121,6 @@ h2 {
 
 .quotes p {
   padding: 10px 20px;
-  /* font-size: 18px; */
   font-style: italic;
   line-height: 2em;
 }
@@ -142,7 +141,7 @@ footer {
   border-radius: 15px;
 }
 
-@media (min-width: 375px) and (orientation: portrait) {
+@media (min-width: 375px) and (max-width: 425px) and (orientation: portrait) {
   .desktop-view {
     display: none;
   }
@@ -170,19 +169,18 @@ footer {
     width: 100%;
   }
 
-  .principal {
-    width: 100%;
-    margin: 0;
+  .mobile-principal {
+    margin: 0 5px;
   }
 
   .quotes {
     height: 100%;
-    width: 100%;
+    width: 99%;
     text-align: justify;
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid #09a603;
     border-radius: 20px;
-    margin: 0 5px;
+    margin: 0;
   }
 
   .quotes p {
@@ -190,5 +188,73 @@ footer {
     font-size: 14px;
     font-style: italic;
     line-height: 1.2em;
+  }
+
+  .menu {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #09a603;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1023px) and (orientation: landscape) {
+  .mobile-view {
+    display: none;
+  }
+
+  .desktop-view {
+    display: block;
+  }
+
+  .menu {
+    font-size: 1rem;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+  }
+
+  .header {
+    margin: 5px;
+  }
+
+  .principal {
+    margin: 0 5px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-top: 5px;
+  }
+
+  .overview p {
+    font-size: 14px;
+  }
+
+  .quotes {
+    margin-left: 5px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    padding-top: 5px;
+  }
+
+  .quotes p {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
