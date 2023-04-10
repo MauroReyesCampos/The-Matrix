@@ -5,256 +5,53 @@
   padding: 0;
 }
 
-.mobile-view {
-  display: none;
-}
-
 body {
   background-image: url(../assets/img/matrix_background.jpg);
-  text-align: center;
+  background-position: cover;
   font-family: "Aldrich", sans-serif;
   color: white;
 }
 
-.header {
-  margin: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  border: 2px solid #09a603;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.video {
-  flex-grow: 2;
-}
-
-.header-menu {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  /* height: 100%; */
-  text-align: center;
-  justify-content: space-around;
-}
-
-img {
-  width: 100%;
-}
-
-.video {
-  margin: 10px;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-}
-
-.menu {
-  font-size: 1.5rem;
-  line-height: 50px;
-  letter-spacing: 0.1em;
-}
-
-.menu-list {
-  list-style-type: none;
-}
-
-.menu-list a {
-  color: white;
-  text-decoration: none;
-}
-
-.menu-list a:hover {
-  text-shadow: 4px 4px 4px #09a603;
-  transition: 0.3s;
-}
-
-.principal {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 10px;
-}
-
-.overview {
-  text-align: justify;
-  width: 200%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #09a603;
-  border-radius: 20px;
-}
-
-.overview p {
-  padding: 10px;
-}
-
-h1 {
-  font-size: 2em;
-  text-shadow: 3px 3px 3px #09a603;
-  text-align: center;
-  padding-top: 10px;
-}
-
-i {
-  text-shadow: 2px 2px 2px #09a603;
-}
-
-.quotes {
-  width: 100%;
-  text-align: justify;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #09a603;
-  border-radius: 20px;
-  margin-left: 10px;
-}
-
-h2 {
-  font-size: 1.5em;
-  text-shadow: 3px 3px 3px #09a603;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.quotes p {
-  padding: 10px 20px;
-  font-style: italic;
-  line-height: 2em;
-}
-
-span {
-  font-style: normal;
-  color: #09a603;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  margin: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #09a603;
+.col-navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #09a603;
   border-radius: 15px;
 }
 
-@media (min-width: 375px) and (max-width: 425px) and (orientation: portrait) {
-  .desktop-view {
-    display: none;
-  }
-
-  .mobile-view {
-    display: block;
-  }
-
-  .header {
-    flex-direction: column;
-    height: 200%;
-    margin: 5px;
-  }
-
-  img {
-    height: 50px;
-  }
-
-  .video {
-    margin: 5px 0;
-    width: 100%;
-  }
-
-  video {
-    width: 100%;
-  }
-
-  .mobile-principal {
-    margin: 0 5px;
-  }
-
-  .quotes {
-    height: 100%;
-    width: 99%;
-    text-align: justify;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #09a603;
-    border-radius: 20px;
-    margin: 0;
-  }
-
-  .quotes p {
-    padding: 10px;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 1.2em;
-  }
-
-  .menu {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-    margin: 5px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #09a603;
-    border-radius: 10px;
-    font-size: 12px;
-  }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-@media (min-width: 667px) and (max-width: 1023px) and (orientation: landscape) {
-  .mobile-view {
-    display: none;
-  }
+.navbar-brand {
+  width: 65%;
+}
 
-  .desktop-view {
-    display: block;
-  }
+.nav-link {
+  color: white !important;
+}
 
-  .menu {
-    font-size: 1rem;
-    line-height: 40px;
-    letter-spacing: 0.1em;
-  }
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em;
+}
 
-  .header {
-    margin: 5px;
-  }
+.col-overview {
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #09a603;
+  border-radius: 15px;
+}
 
-  .principal {
-    margin: 0 5px;
-  }
+h1 {
+  font-size: 1.3em;
+  text-shadow: 3px 3px 3px #09a603;
+}
 
-  h1 {
-    font-size: 1.5em;
-    padding-top: 5px;
-  }
+.paragraph {
+  font-size: .9em;
+}
 
-  .overview p {
-    font-size: 14px;
-  }
-
-  .quotes {
-    margin-left: 5px;
-  }
-
-  h2 {
-    font-size: 1.2em;
-    padding-top: 5px;
-  }
-
-  .quotes p {
-    font-size: 15px;
-    line-height: 1.5em;
-  }
-
-  footer {
-    font-size: 14px;
-  }
+i {
+  text-shadow: 3px 3px 3px #09a603;
+  font-weight: bold;
 }

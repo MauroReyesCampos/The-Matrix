@@ -4,11 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/main_style.css" />
     <title>The Matrix</title>
   </head>
   <body>
-    <div class="desktop-view">
+    <main class="container mt-2">
+      <header class="main-header row row-cols-1 pt-2">
+          <!-- offcanvas navbar -->
+          <div class="col-navbar">
+            <nav class="navbar bg-dark" data-bs-theme="dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img class="w-100" src="../assets/img/the_matrix_logo.png" alt="matrix_logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      <img class="w-75" src="../assets/img/the_matrix_logo.png" alt="matrix_logo.png">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">FRANQUICIA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ARGUMENTO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PERSONAJES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">TEMÁTICA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">REGISTRARSE</a>
+                      </li>
+                      <li class="nav-item">
+                        
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- video -->
+          <div class="col pt-2">
+            <video class="w-100" src="../assets/video/The_Matrix_Falling_Code_2.mp4" type="video/mp4" autoplay muted loop></video>
+          </div>
+      </header>
+      <section class="main-section row row-cols-1 pt-1">
+        <article class="col-overview">
+          <h1 class="fw-semibold pt-2 text-center">THE MATRIX</h1>
+          <P class="paragraph">Es una tetralogía de películas de ciencia ficción escritas y
+            dirigidas por las hermanas Wachowski. Se compone de
+            <i>The Matrix (1999)</i>, <i>The Matrix Reloaded (2003)</i>,
+            <i>The Matrix Revolutions (2003)</i> y
+            <i>The Matrix Resurrections (2021)</i>. Están protagonizadas en sus
+            papeles principales por Keanu Reeves, Laurence Fishburne,
+            Carrie-Anne Moss y Hugo Weaving.</P>
+        </article>
+      </section>
+    </main>
+    <!-- <div class="desktop-view">
       <header class="header">
         <div class="video">
           <video
@@ -119,6 +183,7 @@
         </nav>
       </section>
       <footer>&copy; Desarrollada por Mauricio Reyes Campos.</footer>
-    </div>
+    </div> -->
+    <script src="../assets/lib/bootstrap.min.js"></script>
   </body>
 </html>
