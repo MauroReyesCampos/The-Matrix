@@ -7,7 +7,7 @@
 
 body {
   font-family: "Aldrich", sans-serif;
-  color: white;
+  color: #bdf2d4;
   background-image: url(../assets/img/matrix_background.jpg);
   background-size: cover;
 }
@@ -29,6 +29,7 @@ img {
 }
 
 .btn {
+  color: #bdf2d4;
   background-color: black;
   border: 1px solid #09a603;
   border-radius: 10px;
