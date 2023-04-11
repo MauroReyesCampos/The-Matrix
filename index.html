@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/index_style.css" />
     <title>The Matrix</title>
   </head>
   <body>
-    <section class="banner">
-      <div class="logo">
-        <img src="./assets/img/the_matrix_logo.png" alt="logo matrix" />
+    <main>
+      <div class="container mt-3 mt-md-5 mt-lg-4 mt-xl-5 text-lg-center">
+        <div class="row row-cols-1">
+          <div class="col-img mb-3 mb-md-5 mb-lg-3">
+            <img src="./assets/img/Matrix_logo.svg" alt="logo matrix"/>
+          </div>
+          <div class="col-morpheus mb-3 mb-md-5 mb-lg-3">
+            <img src="./assets/img/morpheus.png" alt="Morpheus"/>
+          </div>
+          <div class="col-quote mb-md-4">
+            <p class="quote lh-sm pe-lg-3 ps-lg-3 ps-xl-5 pe-xl-5">
+              Esta es tu última oportunidad. Después de esto, no hay vuelta
+              atrás. Si tomas la <span class="blue-pill fw-semibold">píldora azul</span>, la historia termina, te despiertas
+              en tu cama y crees lo que quieras creer. Si tomas la <span class="red-pill fw-semibold">píldora roja</span>,
+              te quedas en el País de las Maravillas y te muestro cuán profundo es
+              el agujero del conejo.
+            </p>
+          </div>
+          <div class="col-button">
+            <button type="button" class="btn btn-outline-success w-100 fw-semibold" onclick="location.href='./pages/main.html'">ENTRAR</button>
+          </div>
+        </div>
       </div>
-      <div class="morpheus">
-        <img src="./assets/img/morpheus.png" alt="Morpheus">
-      </div>
-      <div class="quotes">
-        <p>
-          Esta es tu última oportunidad. Después de esto, no hay vuelta
-          atrás. Si tomas la píldora azul, la historia termina, te despiertas
-          en tu cama y crees lo que quieras creer. Si tomas la píldora roja,
-          te quedas en el País de las Maravillas y te muestro cuán profundo es
-          el agujero del conejo.
-        </p>
-      </div>
-      <div class="enter-button">
-        <h2><a href="./pages/main.html">ENTRAR</a></h2>
-      </div>
-    </section>
-    <script src="./src/main.js"></script>
+    </main>
+    <script src="./assets/lib/bootstrap.min.js"></script>
   </body>
 </html>

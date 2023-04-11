@@ -4,11 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/main_style.css" />
-    <title>The Matrix</title>
+    <title>THE MATRIX</title>
   </head>
   <body>
-    <div class="desktop-view">
+    <main class="container mt-2">
+      <header class="main-header row row-cols-1 row-cols-lg-2">
+          <!-- navbar -->
+          <div class="col col-navbar col order-lg-1">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand w-75" href="#">
+                  <img class="w-100" src="../assets/img/Matrix_logo.svg" alt="the_matrix_logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-lg-center">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">FRANQUICIA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ARGUMENTO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">PERSONAJES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TEMÁTICA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">REGISTRO</a>
+                    </li>
+                    <li class="nav-item nav-login">
+                      <h5 class="nav-link" href="#">INICIO DE SESIÓN</h5>
+                    </li>
+                  </ul>
+                  <form class="form-login">
+                    <input class="form-control mt-2 me-2 mb-3 mb-md-4" type="text" placeholder="Nombre de usuario">
+                    <input class="form-control me-2 mb-3 mb-md-4" type="password" placeholder="Contraseña">
+                    <button class="btn btn-outline-success w-100 mb-2" type="submit">INGRESAR</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- video -->
+          <div class="col pt-2">
+            <video class="w-100" src="../assets/video/The_Matrix_Falling_Code_2.mp4" type="video/mp4" autoplay muted loop></video>
+          </div>
+      </header>
+      <section class="row row-cols-1 row-cols-lg-2 pt-1 pt-lg-4 justify-content-lg-between">
+        <!-- purpose -->
+        <article class="col col-purpose">
+          <h1 class="fw-semibold pt-2 text-center">THE MATRIX</h1>
+          <p class="paragraph">La saga <i>The Matrix</i> habla de una guerra entre la resistencia humana y una raza de Máquinas conscientes que encarcelaron a la humanidad dentro de una realidad virtual conocida como <i>The Matrix</i>. 
+            Las películas se centran en <i>El Elegido</i>, un hombre dotado de habilidades especiales y un destino importante. 
+            Entretejidos a lo largo de la historia principal hay varios hilos de historias de fondo que atraviesan diferentes medios, incluidas las películas, así como los cómics, los videojuegos y una serie de antología animada.<br>
+            Más allá de la historia, <i>The Matrix</i> es rica en alusiones a varias cuestiones de filosofía, teología, psicología, sociología, política e informática.</p>
+        </article>
+        <!-- Quotes -->
+        <blockquote class="col col-quote mt-2 mt-lg-0 mb-lg-0">
+          <h2 class="fw-semibold pt-2 text-center">CITA</h2>
+          <p>
+            "¿Alguna vez has tenido un sueño Neo, un sueño que estabas tan
+            seguro de que era real? ¿Y si no pudieras despertar de ese sueño
+            Neo? ¿Cómo sabrías la diferencia entre el mundo de los sueños y el
+            mundo real?"
+            <span class="span-quote">- Morfeo a Neo</span>
+          </p>
+        </blockquote>
+      </section>
+      <!-- Carousel section -->
+      <section class="row row-cols-1 row-cols-lg-2 pt-1 pt-lg-4 justify-content-lg-between">
+        <div class="col-carousel">
+          <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active pt-lg-2 pb-lg-2">
+                <img src="../assets/img/carousel/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item pt-lg-2 pb-lg-2">
+                <img src="../assets/img/carousel/3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item pt-lg-2 pb-lg-2">
+                <img src="../assets/img/carousel/4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item pt-lg-2 pb-lg-2">
+                <img src="../assets/img/carousel/5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item pt-lg-2 pb-lg-2">
+                <img src="../assets/img/carousel/6.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- login -->
+        <form class="col-login">
+          <h2 class="fw-semibold pt-2 text-center">INICIO DE SESIÓN</h2>
+          <input class="form-control mt-2 me-2 mb-3 mb-md-4 mt-lg-4" type="text" placeholder="Nombre de usuario">
+          <input class="form-control me-2 mb-3 mb-md-4 mt-lg-5" type="password" placeholder="Contraseña">
+          <button class="btn btn-outline-success w-100 mt-lg-3" type="submit">INGRESAR</button>
+        </form>
+
+      </section>
+      <footer class="row row-cols-lg-1 ">
+        <div class="col footer mt-lg-4">&copy; Desarrollado por Mauricio Reyes Campos</div>
+      </footer>
+    </main>
+    <!-- <div class="desktop-view">
       <header class="header">
         <div class="video">
           <video
@@ -119,6 +232,7 @@
         </nav>
       </section>
       <footer>&copy; Desarrollada por Mauricio Reyes Campos.</footer>
-    </div>
+    </div> -->
+    <script src="../assets/lib/bootstrap.min.js"></script>
   </body>
 </html>
