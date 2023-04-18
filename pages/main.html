@@ -36,7 +36,7 @@
                       <a class="nav-link" href="#">TEMÁTICA</a>
                     </li>
                     <li class="nav-item">
-                      <div class="register-link"><a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">REGISTRARSE</a></div>
+                      <div class="register-link"><a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">REGISTRO</a></div>
                     </li>
                     <li class="nav-item nav-login">
                       <div class="register-link"><h5 class="nav-link mb-0">INICIO DE SESIÓN</h5></div>
@@ -114,32 +114,28 @@
           <input class="form-control mt-2 me-2 mb-3 mb-md-4 mt-lg-4" type="text" placeholder="Correo electrónico">
           <input class="form-control me-2 mb-3 mb-md-4 mt-lg-3" type="password" placeholder="Contraseña">
           <button class="btn btn-outline-success w-100 mt-lg-2 text-center" type="submit">INGRESAR</button>
-          <button class="btn btn-outline-success w-100 mt-lg-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">REGISTRARSE</button>
+          <button class="btn btn-outline-success w-100 mt-lg-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">REGISTRO</button>
         </form>
       </section>
       <!-- Offcanvas section -->
       <section>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start row-cols-1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
-            <h6 class="offcanvas-title" id="offcanvasExampleLabel">REGISTRO DE USUARIO</h6>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">REGISTRO DE USUARIO</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <div>
-              <form action="">
-                <input class="form-control mt-2 mb-3 mb-md-4 mt-lg-3" type="text" placeholder="Nombre">
-                <input class="form-control mt-2 mb-3 mb-md-4 mt-lg-3" type="text" placeholder="Apellido">
+              <form action="" class="">
+                <input class="form-control mt-4" type="text" placeholder="Nombre">
+                <input class="form-control mt-4" type="text" placeholder="Apellido">
+                <input class="form-control mt-4" type="number" placeholder="Edad">
+                <input class="form-control mt-4" type="email" placeholder="Correo electrónico">
+                <input class="form-control mt-4" type="password" placeholder="Contraseña">
+                <input class="form-control mt-4" type="password" placeholder="Reingresar contraseña">
+                <button class="btn btn-outline-success w-100 mt-5" type="button">
+                  ENVIAR
+                </button>
               </form>
-            </div>
-            <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
             </div>
           </div>
         </div>

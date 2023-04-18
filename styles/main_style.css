@@ -95,9 +95,14 @@ i {
   display: none;
 }
 
+.offcanvas-title {
+  color: #bdf2d4 !important;
+}
+
 .offcanvas {
   color: #e7fff2;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+  overflow-y: auto;
 }
 
 .btn-close {
@@ -148,6 +153,10 @@ i {
   
   p {
     font-size: 1.3em;
+  }
+
+  .offcanvas {
+    width: 70% !important;
   }
 
   .footer {
@@ -240,6 +249,10 @@ i {
   
   p {
     font-size: 1.1em;
+  }
+
+  .offcanvas {
+    width: 35% !important;
   }
 
   .footer {
